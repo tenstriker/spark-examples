@@ -55,3 +55,19 @@ CA#2016#02#01##123456
 CA#2016#02###123456
 CA#2016####123456
 CA#####123456
+
+
+
+###Testing### 
+mvn clean test
+
+##Build an uber jar##
+mvn clean install
+
+###Run###
+Usage:
+com.mycom.spark.etl.SalesETL {[doBroadcastJoin=true|false]} {[doParallelAggregate=true|false]}
+java -cp target/spark-test-0.0.1-SNAPSHOT.jar com.mycom.spark.etl.SalesETL
+java -cp target/spark-test-0.0.1-SNAPSHOT.jar com.mycom.spark.etl.SalesETL false
+java -cp target/spark-test-0.0.1-SNAPSHOT.jar com.mycom.spark.etl.SalesETL true true
+
